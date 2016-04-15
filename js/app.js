@@ -42,3 +42,17 @@ function sumArray(arr) {
   console.table(arr);
   return sum;
 }
+
+function multiplyArray(arr){
+  var sum = 1;
+  for (var i = 0; i < arr.length; i++){
+    sum *= arr[i];
+  }
+  var arrNumbersMultiply = document.getElementById('arrNumMulti');
+  arrNumbersMultiply.textContent = '"The numbers ' + arr + ' have a product of ' + sum + ' "';
+
+  console.log('"The numbers ' + arr + ' have a product of ' + sum + ' "');
+  console.table(arr);
+
+  return sum;
+}
