@@ -30,3 +30,15 @@ function sumAndMultiply(num1, num2, num3) {
 
   return myArray;
 }
+
+function sumArray(arr) {
+  var sum = 0;
+  for (var i = 0; i < arr.length; i++){
+    sum += arr[i];
+  }
+  var arrNumbers = document.getElementById('arrNum');
+  arrNumbers.textContent = '"' + arr + ' was passed in as an array of numbers, and ' + sum + ' is their sum."';
+  console.log('"' + arr + ' was passed in as an array of numbers, and ' + sum + ' is their sum."');
+  console.table(arr);
+  return sum;
+}
