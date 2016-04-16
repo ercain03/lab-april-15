@@ -19,8 +19,9 @@ function sumAndMultiply(num1, num2, num3) {
   myArray.push(sum(sum(num1, num2), num3));
   myArray.push(multiply(multiply(num1, num2), num3));
 
-  console.log(num1 + ' and ' + num2 + ' and ' + num3 + ' sum to ' + myArray[0]);
-  console.log('The numbers ' + num1 + ' and ' + num2 + ' and ' + num3 + ' have a product of: ' + myArray[1]);
+  //No need to keep the console.logs anymore
+  //console.log(num1 + ' and ' + num2 + ' and ' + num3 + ' sum to ' + myArray[0]);
+  //console.log('The numbers ' + num1 + ' and ' + num2 + ' and ' + num3 + ' have a product of: ' + myArray[1]);
 
   var twoNumberSums = document.getElementById('twoSums');
   twoNumberSums.textContent = '"' + num1 + ' and ' + num2 + ' and ' + num3 + ' sum to ' + myArray[0] + '"';
@@ -38,7 +39,7 @@ function sumArray(arr) {
   }
   var arrNumbers = document.getElementById('arrNum');
   arrNumbers.textContent = '"' + arr + ' was passed in as an array of numbers, and ' + sum + ' is their sum."';
-  console.log('"' + arr + ' was passed in as an array of numbers, and ' + sum + ' is their sum."');
+  //console.log('"' + arr + ' was passed in as an array of numbers, and ' + sum + ' is their sum."');
   console.table(arr);
   return sum;
 }
@@ -51,7 +52,7 @@ function multiplyArray(arr){
   var arrNumbersMultiply = document.getElementById('arrNumMulti');
   arrNumbersMultiply.textContent = '"The numbers ' + arr + ' have a product of ' + sum + ' "';
 
-  console.log('"The numbers ' + arr + ' have a product of ' + sum + ' "');
+  //console.log('"The numbers ' + arr + ' have a product of ' + sum + ' "');
   console.table(arr);
 
   return sum;
